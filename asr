@@ -1,0 +1,37 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zapchast Shop</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body { font-family: Arial; background:#f5f5f5; padding:20px; }
+    .item { background:#fff; padding:15px; margin-bottom:10px; border-radius:10px; }
+    button { padding:10px; border:none; background:#0088cc; color:#fff; border-radius:8px; }
+  </style>
+</head>
+<body>
+
+<h2>📱 Telefon zapchast do‘koni</h2>
+
+<div class="item">
+  <b>iPhone ekran</b><br>
+  Narxi: 500 000 so‘m<br><br>
+  <button onclick="add('iPhone ekran')">Savatchaga qo‘shish</button>
+</div>
+
+<div class="item">
+  <b>Batareya</b><br>
+  Narxi: 200 000 so‘m<br><br>
+  <button onclick="add('Batareya')">Savatchaga qo‘shish</button>
+</div>
+
+<script>
+  function add(item){
+    Telegram.WebApp.showAlert(item + " savatchaga qo‘shildi");
+  }
+</script>
+
+</body>
+</html>
